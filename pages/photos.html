@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Photos</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/photos.css">
+  <link  rel="stylesheet" href="../css/new-custom.css">
+</head>
+
+<body>
+  <div class="new-wrapper">
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,8 30,6" stroke="#333" stroke-width="3"/>
+                    <path d="M0,14 30,16" stroke="#333" stroke-width="3"/>
+                    <path d="M0,24 30,23" stroke="#333" stroke-width="3"/>
+                </svg>
+              </a>
+            </span>
+        
+            <ul class="navbar-nav">
+              <li><a href="../pages/index.html">About</a></li>
+              <li><a href="../pages/Resume.pdf">Resume</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+      </div>
+          <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <li><a href="../pages/index.html">About</a></li>
+            <li><a href="../pages/Resume.pdf">Resume</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
+
+        </div>
+        
+        
+          <script>
+            function openSlideMenu(){
+              document.getElementById('side-menu').style.width = '250px';
+              document.getElementById('main').style.marginLeft = '250px';
+            }
+        
+            function closeSlideMenu(){
+              document.getElementById('side-menu').style.width = '0';
+              document.getElementById('main').style.marginLeft = '0';
+            }
+          </script>
+<div class="grid-wrapper">
+  <div class="photos-wrapper">    
+    <audio src="/music/07.Colours.mp3"></audio>
+    <img src="../img/house.jpg" alt="">
+    <img src="../img/another-house.jpg" alt="">
+    <img src="../img/car-people.jpg" alt="">
+    <img src="../img//one-more.jpg" alt="">
+    <img src="../img/legs.jpg" alt="">
+    <img src="../img/girl.jpg" alt="">
+    <img src="../img/cow.jpg" alt="">
+    <img src="../img/dope.png" alt="">
+  </div>
+</div>
+  </div>
+</div>
+</body>
+
+</html>

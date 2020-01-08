@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: #ddd;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  padding: 1em;
+}
+p {
+  padding: 0em 1em;
+}
+
+i {
+  padding: 0em 0.1em;
+}
+
+img {
+  border-radius: 200px;
+  box-shadow: 0px 0px 20px #777;
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.backgroundimg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.name-container {
+  padding-bottom: 3em;
+}
+
+@keyframes fade {
+  0% {
+    background: url("../img/rv-cliffs.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+  }
+  25% {
+    background: url("../img/girl-overalls.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+  }
+  50% {
+    background: url("../img/shirt-off.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+  }
+  90% {
+    background: url("../img/guy-glasses.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+  }
+  100% {
+    background: url("../img/rv-cliffs.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+  }
+}
+
+.header-background {
+  background: #000;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 520px;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  animation: fade 28s infinite;
+}
+
+.preload-images {
+  display: none;
+  background: url("../img/rv-cliffs.jpg");
+  background: url("../img/girl-overalls.jpg");
+  background: url("../img/shirt-off.jpg");
+  background: url("../img/guy-glasses.jpg");
+  background: url("../img/rv-cliffs.jpg");
+}
+
+.photo-name {
+  line-height: 1.4;
+}
+
+#name {
+  padding: 0;
+}
+.name-description {
+  width: 250px;
+}
+
+.border-bot {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  padding: 0.7em 0;
+  margin: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.nav-span {
+  color: #ff0000;
+}
+
+.nav-list li,
+a {
+  font-size: 25px;
+  color: #333;
+}
+
+.nav-list li,
+a:hover {
+  color: #eaeaea;
+}
+.nav-list li,
+a:visited:hover {
+  color: #eaeaea;
+}
+.nav-list li:last-child {
+  padding-bottom: 30px;
+}
+
+.about {
+  grid-column: 2/4;
+}
+
+.about-header {
+  text-align: left;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#about-header{
+  margin-top: -1em;
+}
+
+.para {
+  text-align: left;
+}
+
+.para:last-child {
+  margin-bottom: 2em;
+}
+.brand-name {
+  font-family: "Tangerine", cursive;
+  font-size: 29px;
+}
+
+.credit {
+  margin-top: 10px;
+}
+
+@media (min-width: 850px) {
+  .about-header {
+    margin-top: 3em;
+  }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .header-background {
+    height: 100vh;
+  }
+
+  .grid-responsive {
+    grid-column: 1/2;
+    height: 100vh;
+    position: fixed;
+    width: 33%;
+  }
+  .about {
+    margin-right: 6em;
+    margin-left: 4em;
+  }
+
+  .para:last-child {
+    margin-bottom: unset;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: unset;
+  }
+
+  .footer-para,
+  .icons {
+    grid-column: 2/4;
+  }
+
+  .icons {
+    margin-bottom: -1em;
+  }
+
+  .credit {
+    padding-top: -1em;
+  }
+}

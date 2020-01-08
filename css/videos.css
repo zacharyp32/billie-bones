@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333333
+    url(https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+p {
+    color: #fff;
+}
+.video-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 14em)) 1fr;
+    margin-top: 2em;
+    margin-left: 1.3em;
+}
+
+.content-wrapper {
+    grid-column: 2/4;
+}
